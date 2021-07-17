@@ -8,11 +8,10 @@ import Typography from "@material-ui/core/Typography";
 import { CardActionArea, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
-import bg1 from "../img/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: `${bg1}`,
+    background: "lightGray",
     backgroundSize: "cover",
     backgroundPosition: "center",
   },

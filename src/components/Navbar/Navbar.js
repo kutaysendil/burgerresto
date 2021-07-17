@@ -47,9 +47,10 @@ const useStyles = makeStyles(() => ({
   },
   logo: {
     fontFamily: "Work Sans, sans-serif",
-    fontWeight: 600,
+    fontWeight: 900,
     color: "#FFFEFE",
     textAlign: "left",
+    textDecoration: "blink",
   },
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
@@ -151,9 +152,11 @@ export default function Header() {
   };
 
   const femmecubatorLogo = (
-    <Typography variant="h6" component="h1" className={logo}>
-      BURGER
-    </Typography>
+    <a href="/" style={{ textDecoration: "none" }}>
+      <Typography variant="h6" component="h1" className={logo}>
+        MAMAS BURGER
+      </Typography>
+    </a>
   );
 
   const getMenuButtons = () => {

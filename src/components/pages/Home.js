@@ -1,7 +1,7 @@
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
-import styles from "react-awesome-slider/src/styles";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
 import { Box, Container } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -18,11 +18,16 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const useStyles = makeStyles({
   root: {
     background: "linear-gradient(to bottom, #000000, #434343)",
+    display: "flex",
     minWidth: "100%",
     minHeight: "100%",
     backgroundSize: "cover",
     backgroundPosition: "center",
     position: "fixed",
+  },
+  div: {
+    position: "relative",
+    marginTop: "4%",
   },
 });
 
@@ -31,7 +36,12 @@ function Home() {
   return (
     <Box className={classes.root}>
       <Container fixed style={{ marginTop: "10%" }}>
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={2500}>
+        <AutoplaySlider
+          play={true}
+          cancelOnInteraction={false}
+          interval={2500}
+          className={classes.div}
+        >
           <div data-src={img1}></div>
           <div data-src={img2}></div>
           <div data-src={img3}></div>
