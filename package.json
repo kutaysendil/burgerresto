@@ -59,10 +59,8 @@
     "gulp-sass": "^4.1.0"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kutaysendil/burger-restaurant.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kutaysendil/burger-restaurant/issues"
+    "type": "",
+    "url": ""
   }
+  
 }
